@@ -1,0 +1,5 @@
+Enter Year: 2000
+2000 is a leap year
+
+Enter Year: 1000
+1000 is not a leap year

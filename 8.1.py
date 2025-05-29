@@ -1,4 +1,5 @@
-tpl = (4, 9, 1, 7, 3, 6, 5, 2)
+tpl = tuple(input("Enter elements: ").split())
+tpl = tuple(map(int, tpl))
 num = int(input("Enter number of results: "))
 
 sorted_lst = sorted(tpl)

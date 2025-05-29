@@ -1,0 +1,3 @@
+Enter elements: 43 83 22 84 12 03 1 
+Enter rotation number: 3
+Rotated List: ['84', '12', '03', '1', '43', '83', '22']

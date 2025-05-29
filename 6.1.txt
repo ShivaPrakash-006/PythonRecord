@@ -1,0 +1,5 @@
+Enter a string: D0MS makes better stationary items
+Vowels: 10
+Consonants: 19
+Digits: 1
+Spaces: 4

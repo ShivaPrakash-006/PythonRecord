@@ -1,0 +1,8 @@
+Enter number: 9
+3.0
+
+Enter number: -9
+Invalid Input: No Negative Numbers
+
+Enter number: Nine
+Invalid Input: invalid literal for int() with base 10: 'Nine'

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>~/Documents/VSCode Files/Python/Record/1.2.py.html</title>
+<meta name="Generator" content="Vim/9.1">
+<meta name="plugin-version" content="vim9.0_v2">
+<meta name="syntax" content="python">
+<meta name="settings" content="number_lines,use_css,no_foldcolumn,expand_tabs,line_ids,prevent_copy=,use_input_for_pc=none">
+<meta name="colorscheme" content="polar">
+<style>
+<!--
+pre { font-family: monospace; color: #000000; background-color: #ffffff; }
+body { font-family: monospace; color: #000000; background-color: #ffffff; }
+* { font-size: 1em; }
+a { color: inherit; }
+.lv15c { color: #b16286; }
+.Identifier { color: #2f6aea; }
+.lv16c { color: #458588; }
+.Type { color: #a626a4; }
+.LineNr { color: #808080; }
+.op_lv16 { color: #458588; }
+.op_lv0 { color: #d65d0e; }
+.String { color: #2a871f; }
+.Constant { color: #d75f00; }
+-->
+</style>
+
+<script>
+<!--
+
+/* function to open any folds containing a jumped-to line before jumping to it */
+function JumpToLine()
+{
+  var lineNum;
+  lineNum = window.location.hash;
+  lineNum = lineNum.substr(1); /* strip off '#' */
+
+  if (lineNum.indexOf('L') == -1) {
+    lineNum = 'L'+lineNum;
+  }
+  var lineElem = document.getElementById(lineNum);
+  /* Always jump to new location even if the line was hidden inside a fold, or
+   * we corrected the raw number to a line ID.
+   */
+  if (lineElem) {
+    lineElem.scrollIntoView(true);
+  }
+  return true;
+}
+if ('onhashchange' in window) {
+  window.onhashchange = JumpToLine;
+}
+
+-->
+</script>
+</head>
+<body onload='JumpToLine();'>
+<pre id='vimCodeElement'>
+<span id="L1" class="LineNr">1 </span>age <span class="op_lv0">=</span> <span class="Type">int</span><span class="lv16c">(</span><span class="Identifier">input</span><span class="lv15c">(</span><span class="String">&quot;Enter your age: &quot;</span><span class="lv15c">)</span><span class="lv16c">)</span>
+<span id="L2" class="LineNr">2 </span><span class="Identifier">print</span><span class="lv16c">(</span><span class="String">&quot;You will be&quot;</span><span class="op_lv16">,</span> age <span class="op_lv16">+</span> <span class="Constant">1</span><span class="op_lv16">,</span> <span class="String">&quot;next year!&quot;</span><span class="lv16c">)</span>
+</pre>
+</body>
+</html>
+<!-- vim: set foldmethod=manual : -->

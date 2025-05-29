@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>~/Documents/VSCode Files/Python/Record/10.2.py.html</title>
+<meta name="Generator" content="Vim/9.1">
+<meta name="plugin-version" content="vim9.0_v2">
+<meta name="syntax" content="python">
+<meta name="settings" content="number_lines,use_css,no_foldcolumn,expand_tabs,line_ids,prevent_copy=,use_input_for_pc=none">
+<meta name="colorscheme" content="polar">
+<style>
+<!--
+pre { font-family: monospace; color: #000000; background-color: #ffffff; }
+body { font-family: monospace; color: #000000; background-color: #ffffff; }
+* { font-size: 1em; }
+a { color: inherit; }
+.lv15c { color: #b16286; }
+.lv16c { color: #458588; }
+.LineNr { color: #808080; }
+.op_lv16 { color: #458588; }
+.op_lv0 { color: #d65d0e; }
+.String { color: #2a871f; }
+.Constant { color: #d75f00; }
+.op_lv15 { color: #b16286; }
+.Statement { color: #ca1243; }
+.Identifier { color: #2f6aea; }
+-->
+</style>
+
+<script>
+<!--
+
+/* function to open any folds containing a jumped-to line before jumping to it */
+function JumpToLine()
+{
+  var lineNum;
+  lineNum = window.location.hash;
+  lineNum = lineNum.substr(1); /* strip off '#' */
+
+  if (lineNum.indexOf('L') == -1) {
+    lineNum = 'L'+lineNum;
+  }
+  var lineElem = document.getElementById(lineNum);
+  /* Always jump to new location even if the line was hidden inside a fold, or
+   * we corrected the raw number to a line ID.
+   */
+  if (lineElem) {
+    lineElem.scrollIntoView(true);
+  }
+  return true;
+}
+if ('onhashchange' in window) {
+  window.onhashchange = JumpToLine;
+}
+
+-->
+</script>
+</head>
+<body onload='JumpToLine();'>
+<pre id='vimCodeElement'>
+<span id="L1" class="LineNr"> 1 </span>students <span class="op_lv0">=</span> <span class="lv16c">{</span>
+<span id="L2" class="LineNr"> 2 </span>    <span class="String">&quot;Alice&quot;</span><span class="op_lv16">:</span> <span class="lv15c">{</span><span class="String">&quot;Math&quot;</span><span class="op_lv15">:</span> <span class="Constant">85</span><span class="op_lv15">,</span> <span class="String">&quot;Science&quot;</span><span class="op_lv15">:</span> <span class="Constant">90</span><span class="op_lv15">,</span> <span class="String">&quot;English&quot;</span><span class="op_lv15">:</span> <span class="Constant">88</span><span class="lv15c">}</span><span class="op_lv16">,</span>
+<span id="L3" class="LineNr"> 3 </span>    <span class="String">&quot;Bob&quot;</span><span class="op_lv16">:</span> <span class="lv15c">{</span><span class="String">&quot;Math&quot;</span><span class="op_lv15">:</span> <span class="Constant">78</span><span class="op_lv15">,</span> <span class="String">&quot;Science&quot;</span><span class="op_lv15">:</span> <span class="Constant">74</span><span class="op_lv15">,</span> <span class="String">&quot;English&quot;</span><span class="op_lv15">:</span> <span class="Constant">80</span><span class="lv15c">}</span><span class="op_lv16">,</span>
+<span id="L4" class="LineNr"> 4 </span>    <span class="String">&quot;Charlie&quot;</span><span class="op_lv16">:</span> <span class="lv15c">{</span><span class="String">&quot;Math&quot;</span><span class="op_lv15">:</span> <span class="Constant">92</span><span class="op_lv15">,</span> <span class="String">&quot;Science&quot;</span><span class="op_lv15">:</span> <span class="Constant">89</span><span class="op_lv15">,</span> <span class="String">&quot;English&quot;</span><span class="op_lv15">:</span> <span class="Constant">95</span><span class="lv15c">}</span><span class="op_lv16">,</span>
+<span id="L5" class="LineNr"> 5 </span><span class="lv16c">}</span>
+<span id="L6" class="LineNr"> 6 </span>
+<span id="L7" class="LineNr"> 7 </span><span class="Statement">for</span> name<span class="op_lv0">,</span> subjects <span class="Statement">in</span> students<span class="op_lv0">.</span><span class="Identifier">items</span><span class="lv16c">()</span><span class="op_lv0">:</span>
+<span id="L8" class="LineNr"> 8 </span>    avg <span class="op_lv0">=</span> <span class="Identifier">sum</span><span class="lv16c">(</span>subjects<span class="op_lv16">.</span><span class="Identifier">values</span><span class="lv15c">()</span><span class="lv16c">)</span> <span class="op_lv0">/</span> <span class="Identifier">len</span><span class="lv16c">(</span>subjects<span class="lv16c">)</span>
+<span id="L9" class="LineNr"> 9 </span>    students<span class="lv16c">[</span>name<span class="lv16c">][</span><span class="String">&quot;Average&quot;</span><span class="lv16c">]</span> <span class="op_lv0">=</span> avg
+<span id="L10" class="LineNr">10 </span>
+<span id="L11" class="LineNr">11 </span>top_student <span class="op_lv0">=</span> <span class="Identifier">max</span><span class="lv16c">(</span>students<span class="op_lv16">,</span> key<span class="op_lv16">=</span><span class="Statement">lambda</span> x<span class="op_lv16">:</span> students<span class="lv15c">[</span>x<span class="lv15c">][</span><span class="String">&quot;Average&quot;</span><span class="lv15c">]</span><span class="lv16c">)</span>
+<span id="L12" class="LineNr">12 </span><span class="Identifier">print</span><span class="lv16c">(</span><span class="String">&quot;Top Scorer is&quot;</span><span class="op_lv16">,</span> top_student<span class="op_lv16">,</span> <span class="String">&quot;with average&quot;</span><span class="op_lv16">,</span> students<span class="lv15c">[</span>top_student<span class="lv15c">][</span><span class="String">&quot;Average&quot;</span><span class="lv15c">]</span><span class="lv16c">)</span>
+</pre>
+</body>
+</html>
+<!-- vim: set foldmethod=manual : -->

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>~/Documents/VSCode Files/Python/Record/12.2.py.html</title>
+<meta name="Generator" content="Vim/9.1">
+<meta name="plugin-version" content="vim9.0_v2">
+<meta name="syntax" content="python">
+<meta name="settings" content="number_lines,use_css,no_foldcolumn,expand_tabs,line_ids,prevent_copy=,use_input_for_pc=none">
+<meta name="colorscheme" content="polar">
+<style>
+<!--
+pre { font-family: monospace; color: #000000; background-color: #ffffff; }
+body { font-family: monospace; color: #000000; background-color: #ffffff; }
+* { font-size: 1em; }
+a { color: inherit; }
+.op_lv0 { color: #d65d0e; }
+.op_lv16 { color: #458588; }
+.Identifier { color: #2f6aea; }
+.Statement { color: #ca1243; }
+.Constant { color: #d75f00; }
+.LineNr { color: #808080; }
+.String { color: #2a871f; }
+.lv16c { color: #458588; }
+.lv15c { color: #b16286; }
+.Type { color: #a626a4; }
+-->
+</style>
+
+<script>
+<!--
+
+/* function to open any folds containing a jumped-to line before jumping to it */
+function JumpToLine()
+{
+  var lineNum;
+  lineNum = window.location.hash;
+  lineNum = lineNum.substr(1); /* strip off '#' */
+
+  if (lineNum.indexOf('L') == -1) {
+    lineNum = 'L'+lineNum;
+  }
+  var lineElem = document.getElementById(lineNum);
+  /* Always jump to new location even if the line was hidden inside a fold, or
+   * we corrected the raw number to a line ID.
+   */
+  if (lineElem) {
+    lineElem.scrollIntoView(true);
+  }
+  return true;
+}
+if ('onhashchange' in window) {
+  window.onhashchange = JumpToLine;
+}
+
+-->
+</script>
+</head>
+<body onload='JumpToLine();'>
+<pre id='vimCodeElement'>
+<span id="L1" class="LineNr"> 1 </span><span class="Statement">def</span> <span class="Identifier">root</span><span class="lv16c">(</span>x<span class="lv16c">)</span><span class="op_lv0">:</span>
+<span id="L2" class="LineNr"> 2 </span>    <span class="Statement">if</span> x <span class="op_lv0">&lt;</span> <span class="Constant">0</span><span class="op_lv0">:</span>
+<span id="L3" class="LineNr"> 3 </span>        <span class="Statement">raise</span> <span class="Type">ValueError</span><span class="lv16c">(</span><span class="String">&quot;No Negative Numbers&quot;</span><span class="lv16c">)</span>
+<span id="L4" class="LineNr"> 4 </span>    <span class="Statement">else</span><span class="op_lv0">:</span>
+<span id="L5" class="LineNr"> 5 </span>        <span class="Statement">return</span> x<span class="op_lv0">**</span><span class="Constant">0.5</span>
+<span id="L6" class="LineNr"> 6 </span>
+<span id="L7" class="LineNr"> 7 </span>
+<span id="L8" class="LineNr"> 8 </span><span class="Statement">try</span><span class="op_lv0">:</span>
+<span id="L9" class="LineNr"> 9 </span>    num <span class="op_lv0">=</span> <span class="Type">int</span><span class="lv16c">(</span><span class="Identifier">input</span><span class="lv15c">(</span><span class="String">&quot;Enter number: &quot;</span><span class="lv15c">)</span><span class="lv16c">)</span>
+<span id="L10" class="LineNr">10 </span>    <span class="Identifier">print</span><span class="lv16c">(</span><span class="Identifier">root</span><span class="lv15c">(</span>num<span class="lv15c">)</span><span class="lv16c">)</span>
+<span id="L11" class="LineNr">11 </span><span class="Statement">except</span> <span class="Type">ValueError</span> <span class="Statement">as</span> err<span class="op_lv0">:</span>
+<span id="L12" class="LineNr">12 </span>    <span class="Identifier">print</span><span class="lv16c">(</span><span class="String">&quot;Invalid Input:&quot;</span><span class="op_lv16">,</span> err<span class="lv16c">)</span>
+<span id="L13" class="LineNr">13 </span><span class="Statement">except</span> <span class="Type">Exception</span> <span class="Statement">as</span> err<span class="op_lv0">:</span>
+<span id="L14" class="LineNr">14 </span>    <span class="Identifier">print</span><span class="lv16c">(</span><span class="String">&quot;Unexpected Error:&quot;</span><span class="op_lv16">,</span> err<span class="lv16c">)</span>
+</pre>
+</body>
+</html>
+<!-- vim: set foldmethod=manual : -->

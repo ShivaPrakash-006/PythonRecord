@@ -1,0 +1,11 @@
+Enter dividend: 89
+Enter divisor: 4
+22.25
+
+Enter dividend: 89
+Enter divisor: 0
+Cannot divide by zero
+
+Enter dividend: 89
+Enter divisor: Zero
+Invalid input

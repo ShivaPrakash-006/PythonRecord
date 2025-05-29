@@ -1,0 +1,2 @@
+Enter elements: Hola World This is a toast!
+Filtered List: ['World', 'This', 'is']

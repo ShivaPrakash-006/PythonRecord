@@ -1,0 +1,4 @@
+Enter Principal Amount (Rs.): 10000
+Enter Rate of Interest (%): 5
+Enter Time in Years: 10
+Amount after 10.0 years: 15000.0

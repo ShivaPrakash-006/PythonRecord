@@ -1,0 +1,3 @@
+Enter filename: 12.1.txt
+Total Lines: 11
+Total Words: 25

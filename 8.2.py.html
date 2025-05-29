@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>~/Documents/VSCode Files/Python/Record/8.2.py.html</title>
+<meta name="Generator" content="Vim/9.1">
+<meta name="plugin-version" content="vim9.0_v2">
+<meta name="syntax" content="python">
+<meta name="settings" content="number_lines,use_css,no_foldcolumn,expand_tabs,line_ids,prevent_copy=,use_input_for_pc=none">
+<meta name="colorscheme" content="polar">
+<style>
+<!--
+pre { font-family: monospace; color: #000000; background-color: #ffffff; }
+body { font-family: monospace; color: #000000; background-color: #ffffff; }
+* { font-size: 1em; }
+a { color: inherit; }
+.LineNr { color: #808080; }
+.op_lv15 { color: #b16286; }
+.op_lv16 { color: #458588; }
+.op_lv0 { color: #d65d0e; }
+.Identifier { color: #2f6aea; }
+.Statement { color: #ca1243; }
+.Constant { color: #d75f00; }
+.Type { color: #a626a4; }
+.op_lv14 { color: #cc241d; }
+.lv14c { color: #cc241d; }
+.lv15c { color: #b16286; }
+.lv16c { color: #458588; }
+.String { color: #2a871f; }
+-->
+</style>
+
+<script>
+<!--
+
+/* function to open any folds containing a jumped-to line before jumping to it */
+function JumpToLine()
+{
+  var lineNum;
+  lineNum = window.location.hash;
+  lineNum = lineNum.substr(1); /* strip off '#' */
+
+  if (lineNum.indexOf('L') == -1) {
+    lineNum = 'L'+lineNum;
+  }
+  var lineElem = document.getElementById(lineNum);
+  /* Always jump to new location even if the line was hidden inside a fold, or
+   * we corrected the raw number to a line ID.
+   */
+  if (lineElem) {
+    lineElem.scrollIntoView(true);
+  }
+  return true;
+}
+if ('onhashchange' in window) {
+  window.onhashchange = JumpToLine;
+}
+
+-->
+</script>
+</head>
+<body onload='JumpToLine();'>
+<pre id='vimCodeElement'>
+<span id="L1" class="LineNr"> 1 </span><span class="Statement">def</span> <span class="Identifier">flatten</span><span class="lv16c">(</span>tpl<span class="lv16c">)</span><span class="op_lv0">:</span>
+<span id="L2" class="LineNr"> 2 </span>    flat_lst <span class="op_lv0">=</span> <span class="lv16c">[]</span>
+<span id="L3" class="LineNr"> 3 </span>    <span class="Statement">for</span> element <span class="Statement">in</span> tpl<span class="op_lv0">:</span>
+<span id="L4" class="LineNr"> 4 </span>        <span class="Statement">if</span> <span class="Statement">not</span> <span class="Identifier">isinstance</span><span class="lv16c">(</span>element<span class="op_lv16">,</span> <span class="Type">tuple</span><span class="lv16c">)</span><span class="op_lv0">:</span>
+<span id="L5" class="LineNr"> 5 </span>            flat_lst<span class="op_lv0">.</span><span class="Identifier">append</span><span class="lv16c">(</span>element<span class="lv16c">)</span>
+<span id="L6" class="LineNr"> 6 </span>        <span class="Statement">else</span><span class="op_lv0">:</span>
+<span id="L7" class="LineNr"> 7 </span>            flat_lst <span class="op_lv0">+=</span> <span class="Identifier">flatten</span><span class="lv16c">(</span>element<span class="lv16c">)</span>
+<span id="L8" class="LineNr"> 8 </span>    <span class="Statement">return</span> <span class="Type">tuple</span><span class="lv16c">(</span>flat_lst<span class="lv16c">)</span>
+<span id="L9" class="LineNr"> 9 </span>
+<span id="L10" class="LineNr">10 </span>
+<span id="L11" class="LineNr">11 </span>nestedTuple <span class="op_lv0">=</span> <span class="lv16c">(</span><span class="Constant">5</span><span class="op_lv16">,</span> <span class="lv15c">(</span><span class="Constant">2</span><span class="op_lv15">,</span> <span class="Constant">5</span><span class="lv15c">)</span><span class="op_lv16">,</span> <span class="lv15c">(</span><span class="lv14c">(</span><span class="Constant">1</span><span class="op_lv14">,</span> <span class="Constant">5</span><span class="lv14c">)</span><span class="op_lv15">,</span> <span class="lv14c">(</span><span class="Constant">4</span><span class="op_lv14">,</span> <span class="Constant">7</span><span class="lv14c">)</span><span class="lv15c">)</span><span class="op_lv16">,</span> <span class="lv15c">(</span><span class="Constant">2</span><span class="op_lv15">,</span> <span class="lv14c">(</span><span class="Constant">4</span><span class="op_lv14">,</span> <span class="Constant">3</span><span class="lv14c">)</span><span class="lv15c">)</span><span class="lv16c">)</span>
+<span id="L12" class="LineNr">12 </span>
+<span id="L13" class="LineNr">13 </span>flattenTuple <span class="op_lv0">=</span> <span class="Identifier">flatten</span><span class="lv16c">(</span>nestedTuple<span class="lv16c">)</span>
+<span id="L14" class="LineNr">14 </span><span class="Identifier">print</span><span class="lv16c">(</span><span class="String">&quot;The flattened tuple : &quot;</span> <span class="op_lv16">+</span> <span class="Type">str</span><span class="lv15c">(</span>flattenTuple<span class="lv15c">)</span><span class="lv16c">)</span>
+</pre>
+</body>
+</html>
+<!-- vim: set foldmethod=manual : -->

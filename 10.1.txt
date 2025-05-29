@@ -1,0 +1,2 @@
+Enter Upper Limit: 10
+Even number squares: {2: 4, 4: 16, 6: 36, 8: 64, 10: 100}

@@ -1,0 +1,2 @@
+Enter Elements: 73 82 93 73 91 91 43 12 73 
+Unique Items in List: ['12', '43', '73', '82', '91', '93']

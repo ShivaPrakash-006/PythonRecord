@@ -1,0 +1,5 @@
+Enter a number: 54
+Valid input
+
+Enter a number: No
+Invalid input

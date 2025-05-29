@@ -1,5 +1,5 @@
 try:
-    divident = int(input("Enter divident: "))
+    divident = int(input("Enter dividend: "))
     divisor = int(input("Enter divisor: "))
     print(divident / divisor)
 except ZeroDivisionError:

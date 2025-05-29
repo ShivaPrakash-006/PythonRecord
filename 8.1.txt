@@ -1,0 +1,4 @@
+Enter elements: 31 4 09 33 2 -42 43
+Enter number of results: 2
+Min Values: [-42, 2]
+Max values: [33, 43]

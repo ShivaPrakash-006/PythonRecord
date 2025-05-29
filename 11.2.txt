@@ -1,0 +1,7 @@
+Enter dividend: 54
+Enter divisor: 6
+9.0
+
+Enter dividend: 54
+Enter divisor: 0
+Cannot divide by zero

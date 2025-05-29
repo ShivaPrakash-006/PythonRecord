@@ -1,0 +1,2 @@
+Enter number: 12
+Sum of first 12 natural numbers is 78
