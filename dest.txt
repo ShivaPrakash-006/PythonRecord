@@ -1,16 +1,8 @@
-try:
-    filename = input("Enter filename: ")
+Enter number: 9
+3.0
 
-    with open(filename, "r") as f:
-        lines = f.readlines()
+Enter number: -9
+Invalid Input: No Negative Numbers
 
-    line_count = len(lines)
-    word_count = sum(len(line.split()) for line in lines)
-
-    print("Total Lines:", line_count)
-    print("Total Words:", word_count)
-
-except FileNotFoundError:
-    print("Error: File not found.")
-except Exception as e:
-    print("Unexpected error:", e)
+Enter number: Nine
+Invalid Input: invalid literal for int() with base 10: 'Nine'
